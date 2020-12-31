@@ -582,10 +582,7 @@ U 5FD0FA45
 F0 "Hall sensor matrix" 50
 F1 "hall.sch" 50
 $EndSheet
-Wire Wire Line
-	4775 2925 4925 2925
 NoConn ~ 6825 2225
-NoConn ~ 6825 2025
 $Comp
 L board:RPi_GPIO J3
 U 1 1 5FD50DA9
@@ -688,14 +685,10 @@ Wire Wire Line
 	4775 3525 4775 3425
 Wire Wire Line
 	7225 1925 6825 1925
-Text GLabel 4725 2825 0    50   Input ~ 0
+Text GLabel 7300 2025 2    50   Input ~ 0
 LED_DATA
 Text Label 4425 3025 0    50   ~ 0
 BTN1
-Wire Wire Line
-	4725 2825 4775 2825
-Wire Wire Line
-	4775 2825 4775 2925
 Wire Wire Line
 	4425 3225 4925 3225
 Text Label 4425 3225 0    50   ~ 0
@@ -747,4 +740,7 @@ Wire Wire Line
 	5100 4950 5500 4950
 Text Label 5500 4950 2    50   ~ 0
 AUX10
+NoConn ~ 4925 2925
+Wire Wire Line
+	6825 2025 7300 2025
 $EndSCHEMATC
