@@ -1,0 +1,2 @@
+stockfish==3.17.0
+chess==1.6.1

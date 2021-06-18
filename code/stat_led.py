@@ -13,7 +13,7 @@ class StatLED:
     def blink(self, times=3, delay=0.5):
     # Turn on stat led, wait for <delay> sec and then turn it off for <times> times
         for _ in range(times):
-            GPIO.output(STAT_LED,GPIO.HIGH)
+            GPIO.output(STAT_LED, GPIO.HIGH)
             sleep(delay)
             GPIO.output(STAT_LED, GPIO.LOW)
 
