@@ -1,6 +1,3 @@
-# Smart chessboard
-Designs for an electronic chessboard with Stockfish chess engine
-
 ## Hardware block diagram
 ![](docs/block-diagram.png)
 
