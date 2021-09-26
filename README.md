@@ -1,3 +1,6 @@
+## Software flowchart
+[View the flowchart](docs/flowchart.png)
+
 ## Hardware block diagram
 ![](docs/block-diagram.png)
 
