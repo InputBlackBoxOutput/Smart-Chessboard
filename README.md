@@ -1,8 +1,12 @@
+# Smart Chessboard
+
+![Model](docs/smart-chessboard.png)
+
 ## Software flowchart
 [View the flowchart](docs/flowchart.png)
 
 ## Hardware block diagram
-![](docs/block-diagram.png)
+![Hardware block diagram](docs/block-diagram.png)
 
 ## Repository layout
 <table>
