@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -31,14 +30,14 @@ F 3 "" H 2475 6150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2475 5900 2475 6150
-Text Label 4425 3125 0    50   ~ 0
+Text Label 4450 2850 0    50   ~ 0
 BTN2
-Text Label 7300 3025 2    50   ~ 0
+Text Label 7325 2750 2    50   ~ 0
 STAT_LED
-Text Label 4425 1825 0    50   ~ 0
+Text Label 4450 1550 0    50   ~ 0
 BUZZER
 Wire Wire Line
-	4925 3025 4425 3025
+	4950 2750 4450 2750
 Text Label 1475 4925 3    50   ~ 0
 BTN1
 $Comp
@@ -177,7 +176,7 @@ U 1 1 5F0CC819
 P 3075 1150
 F 0 "C1" H 3167 1196 50  0000 L CNN
 F 1 "2.2uF" H 3167 1105 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 3075 1150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3075 1150 50  0001 C CNN
 F 3 "~" H 3075 1150 50  0001 C CNN
 	1    3075 1150
 	1    0    0    -1  
@@ -239,59 +238,59 @@ Wire Wire Line
 Wire Wire Line
 	3075 975  3075 1050
 Wire Wire Line
-	6825 1525 6975 1525
+	6850 1250 7000 1250
 Wire Wire Line
-	6975 1525 6975 1450
-NoConn ~ 6825 1625
-NoConn ~ 4925 1525
-NoConn ~ 4925 2325
-NoConn ~ 4925 1925
-NoConn ~ 6825 2125
-NoConn ~ 6825 2425
-NoConn ~ 6825 2925
-NoConn ~ 6825 3125
-NoConn ~ 6825 1725
-NoConn ~ 4925 2725
+	7000 1250 7000 1175
+NoConn ~ 6850 1350
+NoConn ~ 4950 1250
+NoConn ~ 4950 2050
+NoConn ~ 4950 1650
+NoConn ~ 6850 1850
+NoConn ~ 6850 2150
+NoConn ~ 6850 2650
+NoConn ~ 6850 2850
+NoConn ~ 6850 1450
+NoConn ~ 4950 2450
 $Comp
 L power:GND #PWR011
 U 1 1 5FD9644A
-P 4775 3525
-F 0 "#PWR011" H 4775 3275 50  0001 C CNN
-F 1 "GND" H 4780 3352 50  0000 C CNN
-F 2 "" H 4775 3525 50  0001 C CNN
-F 3 "" H 4775 3525 50  0001 C CNN
-	1    4775 3525
+P 4800 3250
+F 0 "#PWR011" H 4800 3000 50  0001 C CNN
+F 1 "GND" H 4805 3077 50  0000 C CNN
+F 2 "" H 4800 3250 50  0001 C CNN
+F 3 "" H 4800 3250 50  0001 C CNN
+	1    4800 3250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR013
 U 1 1 5FD97EE7
-P 6975 1450
-F 0 "#PWR013" H 6975 1300 50  0001 C CNN
-F 1 "+5V" H 6990 1623 50  0000 C CNN
-F 2 "" H 6975 1450 50  0001 C CNN
-F 3 "" H 6975 1450 50  0001 C CNN
-	1    6975 1450
+P 7000 1175
+F 0 "#PWR013" H 7000 1025 50  0001 C CNN
+F 1 "+5V" H 7015 1348 50  0000 C CNN
+F 2 "" H 7000 1175 50  0001 C CNN
+F 3 "" H 7000 1175 50  0001 C CNN
+	1    7000 1175
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4925 1825 4425 1825
+	4950 1550 4450 1550
 Wire Wire Line
-	6825 2325 7300 2325
+	6850 2050 7325 2050
 Wire Wire Line
-	6825 2525 7300 2525
+	6850 2250 7325 2250
 Wire Wire Line
-	6825 2625 7300 2625
+	6850 2350 7325 2350
 Wire Wire Line
-	6825 2725 7300 2725
+	6850 2450 7325 2450
 Wire Wire Line
-	6825 3025 7300 3025
+	6850 2750 7325 2750
 Wire Wire Line
-	6825 3225 7300 3225
+	6850 2950 7325 2950
 Wire Wire Line
-	6825 3325 7300 3325
+	6850 3050 7325 3050
 Wire Wire Line
-	6825 3425 7300 3425
+	6850 3150 7325 3150
 $Comp
 L Switch:SW_Push SW3
 U 1 1 5FA98EBF
@@ -335,41 +334,41 @@ F 3 "~" H 2000 5900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2000 4950 2000 5500
-Text GLabel 7300 2325 2    50   Input ~ 0
+Text GLabel 7325 2050 2    50   Input ~ 0
 MUX_OUT
-Text GLabel 7300 2525 2    50   Input ~ 0
+Text GLabel 7325 2250 2    50   Input ~ 0
 M_S0
-Text GLabel 7300 2625 2    50   Input ~ 0
+Text GLabel 7325 2350 2    50   Input ~ 0
 M_S1
-Text GLabel 7300 2725 2    50   Input ~ 0
+Text GLabel 7325 2450 2    50   Input ~ 0
 M_S2
 Wire Wire Line
-	4425 3125 4925 3125
-Text GLabel 7300 3225 2    50   Input ~ 0
+	4450 2850 4950 2850
+Text GLabel 7325 2950 2    50   Input ~ 0
 D_S0
-Text GLabel 7300 3325 2    50   Input ~ 0
+Text GLabel 7325 3050 2    50   Input ~ 0
 D_S1
-Text GLabel 7300 3425 2    50   Input ~ 0
+Text GLabel 7325 3150 2    50   Input ~ 0
 D_S2
 Wire Wire Line
-	4925 2425 4525 2425
+	4950 2150 4550 2150
 Wire Wire Line
-	4925 2525 4525 2525
+	4950 2250 4550 2250
 Wire Wire Line
-	4925 2625 4525 2625
+	4950 2350 4550 2350
 Wire Wire Line
-	4925 1625 4525 1625
+	4950 1350 4550 1350
 Wire Wire Line
-	4925 1725 4525 1725
-Text Label 4525 1625 0    50   ~ 0
+	4950 1450 4550 1450
+Text Label 4550 1350 0    50   ~ 0
 AUX1
-Text Label 4525 1725 0    50   ~ 0
+Text Label 4550 1450 0    50   ~ 0
 AUX2
-Text Label 4525 2425 0    50   ~ 0
+Text Label 4550 2150 0    50   ~ 0
 AUX3
-Text Label 4525 2525 0    50   ~ 0
+Text Label 4550 2250 0    50   ~ 0
 AUX4
-Text Label 4525 2625 0    50   ~ 0
+Text Label 4550 2350 0    50   ~ 0
 AUX5
 Text Notes 4775 5125 0    50   ~ 0
 AUX
@@ -492,69 +491,38 @@ F 3 "~" H 9800 5275 50  0001 C CNN
 	1    9800 5275
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J1
-U 1 1 60115434
-P 4775 6200
-F 0 "J1" H 4825 6517 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 4825 6426 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 4775 6200 50  0001 C CNN
-F 3 "~" H 4775 6200 50  0001 C CNN
-	1    4775 6200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4575 6100 4250 6100
+	4800 6050 4475 6050
 Wire Wire Line
-	4575 6200 4250 6200
+	4800 6150 4475 6150
 Wire Wire Line
-	4575 6300 4250 6300
+	4475 6150 4475 6225
 Wire Wire Line
-	5400 6100 5075 6100
-Wire Wire Line
-	5400 6200 5075 6200
-Wire Wire Line
-	5400 6300 5075 6300
-Wire Wire Line
-	4250 6300 4250 6200
-Wire Wire Line
-	4250 6100 4250 6200
-Connection ~ 4250 6200
-Wire Wire Line
-	5400 6100 5400 6200
-Connection ~ 5400 6200
-Wire Wire Line
-	5400 6200 5400 6300
-Connection ~ 5400 6300
-Wire Wire Line
-	5400 6300 5400 6375
-Wire Wire Line
-	4250 6100 4250 6025
-Connection ~ 4250 6100
+	4475 6050 4475 5975
 $Comp
 L power:GND #PWR012
 U 1 1 60123738
-P 5400 6375
-F 0 "#PWR012" H 5400 6125 50  0001 C CNN
-F 1 "GND" H 5405 6202 50  0000 C CNN
-F 2 "" H 5400 6375 50  0001 C CNN
-F 3 "" H 5400 6375 50  0001 C CNN
-	1    5400 6375
+P 4475 6225
+F 0 "#PWR012" H 4475 5975 50  0001 C CNN
+F 1 "GND" H 4480 6052 50  0000 C CNN
+F 2 "" H 4475 6225 50  0001 C CNN
+F 3 "" H 4475 6225 50  0001 C CNN
+	1    4475 6225
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR010
 U 1 1 60123BEB
-P 4250 6025
-F 0 "#PWR010" H 4250 5875 50  0001 C CNN
-F 1 "+5V" H 4265 6198 50  0000 C CNN
-F 2 "" H 4250 6025 50  0001 C CNN
-F 3 "" H 4250 6025 50  0001 C CNN
-	1    4250 6025
+P 4475 5975
+F 0 "#PWR010" H 4475 5825 50  0001 C CNN
+F 1 "+5V" H 4490 6148 50  0000 C CNN
+F 2 "" H 4475 5975 50  0001 C CNN
+F 3 "" H 4475 5975 50  0001 C CNN
+	1    4475 5975
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6825 2825
-NoConn ~ 4925 2825
+NoConn ~ 6850 2550
+NoConn ~ 4950 2550
 Wire Wire Line
 	5100 4550 5500 4550
 Text Label 5500 4550 2    50   ~ 0
@@ -582,16 +550,16 @@ U 5FD0FA45
 F0 "Hall sensor matrix" 50
 F1 "hall.sch" 50
 $EndSheet
-NoConn ~ 6825 2225
+NoConn ~ 6850 1950
 $Comp
 L board:RPi_GPIO J3
 U 1 1 5FD50DA9
-P 5125 1525
-F 0 "J3" H 5875 1812 60  0000 C CNN
-F 1 "RPi_GPIO" H 5875 1706 60  0000 C CNN
-F 2 "board:raspberry_pi_socket" H 5125 1525 60  0001 C CNN
-F 3 "" H 5125 1525 60  0000 C CNN
-	1    5125 1525
+P 5150 1250
+F 0 "J3" H 5900 1537 60  0000 C CNN
+F 1 "RPi_GPIO" H 5900 1431 60  0000 C CNN
+F 2 "board:raspberry_pi_socket" H 5150 1250 60  0001 C CNN
+F 3 "" H 5150 1250 60  0000 C CNN
+	1    5150 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -677,42 +645,42 @@ F 3 "~" H 2975 5900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2975 4950 2975 5500
-Text Label 7225 1925 2    50   ~ 0
+Text Label 7250 1650 2    50   ~ 0
 AUX6
 Wire Wire Line
-	4775 3425 4925 3425
+	4800 3150 4950 3150
 Wire Wire Line
-	4775 3525 4775 3425
+	4800 3250 4800 3150
 Wire Wire Line
-	7225 1925 6825 1925
-Text GLabel 7300 2025 2    50   Input ~ 0
+	7250 1650 6850 1650
+Text GLabel 7325 1750 2    50   Input ~ 0
 LED_DATA
-Text Label 4425 3025 0    50   ~ 0
+Text Label 4450 2750 0    50   ~ 0
 BTN1
 Wire Wire Line
-	4425 3225 4925 3225
-Text Label 4425 3225 0    50   ~ 0
+	4450 2950 4950 2950
+Text Label 4450 2950 0    50   ~ 0
 BTN3
 Wire Wire Line
-	4425 3325 4925 3325
-Text Label 4425 3325 0    50   ~ 0
+	4450 3050 4950 3050
+Text Label 4450 3050 0    50   ~ 0
 BTN4
-Text Label 7225 1825 2    50   ~ 0
+Text Label 7250 1550 2    50   ~ 0
 AUX7
 Wire Wire Line
-	7225 1825 6825 1825
-Text Label 4525 2025 0    50   ~ 0
+	7250 1550 6850 1550
+Text Label 4550 1750 0    50   ~ 0
 AUX8
 Wire Wire Line
-	4525 2025 4925 2025
-Text Label 4525 2125 0    50   ~ 0
+	4550 1750 4950 1750
+Text Label 4550 1850 0    50   ~ 0
 AUX9
 Wire Wire Line
-	4525 2125 4925 2125
-Text Label 4525 2225 0    50   ~ 0
+	4550 1850 4950 1850
+Text Label 4550 1950 0    50   ~ 0
 AUX10
 Wire Wire Line
-	4525 2225 4925 2225
+	4550 1950 4950 1950
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even e1
 U 1 1 5FF31298
@@ -740,7 +708,18 @@ Wire Wire Line
 	5100 4950 5500 4950
 Text Label 5500 4950 2    50   ~ 0
 AUX10
-NoConn ~ 4925 2925
+NoConn ~ 4950 2650
 Wire Wire Line
-	6825 2025 7300 2025
+	6850 1750 7325 1750
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 6203770B
+P 5000 6050
+F 0 "J1" H 5028 6026 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 5175 5625 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 5000 6050 50  0001 C CNN
+F 3 "~" H 5000 6050 50  0001 C CNN
+	1    5000 6050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -177,7 +176,7 @@ U 1 1 5F0CC819
 P 3075 1150
 F 0 "C1" H 3167 1196 50  0000 L CNN
 F 1 "2.2uF" H 3167 1105 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 3075 1150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3075 1150 50  0001 C CNN
 F 3 "~" H 3075 1150 50  0001 C CNN
 	1    3075 1150
 	1    0    0    -1  
@@ -492,65 +491,34 @@ F 3 "~" H 9800 5275 50  0001 C CNN
 	1    9800 5275
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J1
-U 1 1 60115434
-P 4775 6200
-F 0 "J1" H 4825 6517 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 4825 6426 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 4775 6200 50  0001 C CNN
-F 3 "~" H 4775 6200 50  0001 C CNN
-	1    4775 6200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4575 6100 4250 6100
+	4800 6050 4475 6050
 Wire Wire Line
-	4575 6200 4250 6200
+	4800 6150 4475 6150
 Wire Wire Line
-	4575 6300 4250 6300
+	4475 6150 4475 6225
 Wire Wire Line
-	5400 6100 5075 6100
-Wire Wire Line
-	5400 6200 5075 6200
-Wire Wire Line
-	5400 6300 5075 6300
-Wire Wire Line
-	4250 6300 4250 6200
-Wire Wire Line
-	4250 6100 4250 6200
-Connection ~ 4250 6200
-Wire Wire Line
-	5400 6100 5400 6200
-Connection ~ 5400 6200
-Wire Wire Line
-	5400 6200 5400 6300
-Connection ~ 5400 6300
-Wire Wire Line
-	5400 6300 5400 6375
-Wire Wire Line
-	4250 6100 4250 6025
-Connection ~ 4250 6100
+	4475 6050 4475 5975
 $Comp
 L power:GND #PWR012
 U 1 1 60123738
-P 5400 6375
-F 0 "#PWR012" H 5400 6125 50  0001 C CNN
-F 1 "GND" H 5405 6202 50  0000 C CNN
-F 2 "" H 5400 6375 50  0001 C CNN
-F 3 "" H 5400 6375 50  0001 C CNN
-	1    5400 6375
+P 4475 6225
+F 0 "#PWR012" H 4475 5975 50  0001 C CNN
+F 1 "GND" H 4480 6052 50  0000 C CNN
+F 2 "" H 4475 6225 50  0001 C CNN
+F 3 "" H 4475 6225 50  0001 C CNN
+	1    4475 6225
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR010
 U 1 1 60123BEB
-P 4250 6025
-F 0 "#PWR010" H 4250 5875 50  0001 C CNN
-F 1 "+5V" H 4265 6198 50  0000 C CNN
-F 2 "" H 4250 6025 50  0001 C CNN
-F 3 "" H 4250 6025 50  0001 C CNN
-	1    4250 6025
+P 4475 5975
+F 0 "#PWR010" H 4475 5825 50  0001 C CNN
+F 1 "+5V" H 4490 6148 50  0000 C CNN
+F 2 "" H 4475 5975 50  0001 C CNN
+F 3 "" H 4475 5975 50  0001 C CNN
+	1    4475 5975
 	1    0    0    -1  
 $EndComp
 NoConn ~ 6825 2825
@@ -582,10 +550,7 @@ U 5FD0FA45
 F0 "Hall sensor matrix" 50
 F1 "hall.sch" 50
 $EndSheet
-Wire Wire Line
-	4775 2925 4925 2925
 NoConn ~ 6825 2225
-NoConn ~ 6825 2025
 $Comp
 L board:RPi_GPIO J3
 U 1 1 5FD50DA9
@@ -688,14 +653,10 @@ Wire Wire Line
 	4775 3525 4775 3425
 Wire Wire Line
 	7225 1925 6825 1925
-Text GLabel 4725 2825 0    50   Input ~ 0
+Text GLabel 7300 2025 2    50   Input ~ 0
 LED_DATA
 Text Label 4425 3025 0    50   ~ 0
 BTN1
-Wire Wire Line
-	4725 2825 4775 2825
-Wire Wire Line
-	4775 2825 4775 2925
 Wire Wire Line
 	4425 3225 4925 3225
 Text Label 4425 3225 0    50   ~ 0
@@ -747,4 +708,18 @@ Wire Wire Line
 	5100 4950 5500 4950
 Text Label 5500 4950 2    50   ~ 0
 AUX10
+NoConn ~ 4925 2925
+Wire Wire Line
+	6825 2025 7300 2025
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 6203770B
+P 5000 6050
+F 0 "J1" H 5028 6026 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 5175 5625 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 5000 6050 50  0001 C CNN
+F 3 "~" H 5000 6050 50  0001 C CNN
+	1    5000 6050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
