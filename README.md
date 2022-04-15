@@ -9,32 +9,13 @@
 ![Hardware block diagram](docs/block-diagram.png)
 
 ## Repository layout
-<table>
-    <thead>
-        <tr>
-            <th>Directory</th>
-            <th>Description of contents</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>board</td>
-            <td>PCB design files for the chessboard</td>
-        </tr>
-        <tr>
-            <td>code</td>
-            <td>Raspberry Pi Zero firmware</td>
-        </tr>
-        <tr>
-            <td>docs</td>
-            <td>Design related documents</td>
-        </tr>
-        <tr>
-            <td>gui</td>
-            <td>GUI application built using python</td>
-        </tr>
-    </tbody>
-</table>
+|Directory|Description of contents|
+|--|--|
+|board|PCB design files|
+|code|Raspberry Pi Zero firmware|
+|docs|Design related documents|
+|enclosure|Enclosure design files|
+|gui|GUI application built using Python 3|
 
 ## Ideas for further development
 - Connect the application with the chessboard using a wireless network. Interaction will be based on the pub-sub model (See socketio module)
