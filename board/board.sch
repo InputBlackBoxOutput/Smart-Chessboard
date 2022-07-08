@@ -552,12 +552,12 @@ F1 "hall.sch" 50
 $EndSheet
 NoConn ~ 6850 1950
 $Comp
-L board:RPi_GPIO J3
+L Board:RPi_GPIO J3
 U 1 1 5FD50DA9
 P 5150 1250
 F 0 "J3" H 5900 1537 60  0000 C CNN
 F 1 "RPi_GPIO" H 5900 1431 60  0000 C CNN
-F 2 "board:raspberry_pi_socket" H 5150 1250 60  0001 C CNN
+F 2 "Board:raspberry_pi_socket" H 5150 1250 60  0001 C CNN
 F 3 "" H 5150 1250 60  0000 C CNN
 	1    5150 1250
 	1    0    0    -1  
