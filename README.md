@@ -18,9 +18,8 @@
 |gui|GUI application built using Python 3|
 
 ## Ideas for further development
-- Connect the application with the chessboard using a wireless network. Interaction will be based on the pub-sub model (See socketio module)
+- Connect the chessboard via the internet to another computer
 - A 2 axis linear guide setup using stepper motors to move chess pieces using an electromagnet
-- RFID based chess piece identification (Scanning using an array of 8 RFID readers mounted on a linear guide)
-
+- RFID based chess piece identification. Scan achieved using an array of 8 RFID readers mounted on a linear guide
 
 ### Made with lots of ⏱️, 📚 and ☕ by [InputBlackBoxOutput](https://github.com/InputBlackBoxOutput)
